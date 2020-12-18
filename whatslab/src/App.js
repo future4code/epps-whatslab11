@@ -44,7 +44,7 @@ const Input = styled.input`
 const Label = styled.label`
   padding: 0.5rem 0;
 `;
-const Textarea = styled.input`
+const Textarea = styled.textarea`
   color: #291f1e;
   padding: 0.5rem;
   border-radius: 5px;
@@ -70,7 +70,7 @@ const Button = styled.button`
 `;
 
 const Header = styled.h1`
-  color: #f64740;
+  color: #291f1e;
   background-color: #c3d5af;
   width: 100%;
   display: flex;
@@ -121,7 +121,6 @@ class App extends React.Component {
 
     alert("Mensagem enviada com sucesso!");
     this.setState({
-      inputNomeUsuario: "",
       inputMensagemUsuario: "",
     });
   };
